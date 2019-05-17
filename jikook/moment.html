@@ -1,85 +1,78 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[[Jikook]]</title>
+    <title>Moment - TRM_UXUI</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
         footer {
             box-shadow: 0 50vh 0 50vh #ffc107;
         }
+        .sources div {
+            margin: -1px 0 0 -1px;
+        }
     </style>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-warning mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="/images/logo.png" style="height: 30px; width: auto;" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recent Changes</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Browse</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Dates</a>
-                            <a class="dropdown-item" href="#">Locations</a>
-                            <a class="dropdown-item" href="#">Events</a>
-                            <a class="dropdown-item" href="#">Sources</a>
-                            <a class="dropdown-item" href="#">Topics</a>
-                            <a class="dropdown-item" href="#">Tags</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
+    
+<nav class="navbar navbar-expand-md navbar-light bg-warning mb-4">
     <div class="container">
+        <a class="navbar-brand" href="#"><img src="/images/logo.png" style="height: 30px; width: auto;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recent Changes</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Dates</a>
+                        <a class="dropdown-item" href="#">Locations</a>
+                        <a class="dropdown-item" href="#">Events</a>
+                        <a class="dropdown-item" href="#">Sources</a>
+                        <a class="dropdown-item" href="#">Topics</a>
+                        <a class="dropdown-item" href="#">Tags</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section id="information">
         <div class="btn-group float-right" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary">Edit <i class="fas fa-edit"></i></button>
             <button type="button" class="btn btn-warning">History <i class="fas fa-history"></i></button>
         </div>
 
         <h2 class="mb-3">Chicago D2 Fireworks</h2>
-        <div class="row">
-            <div class="col-7">
-                <p>After <a href="#" class="text-danger">BTS</a> left the stage during the Speak Yourself Tour in
-                    Chicago, Day 2, Jimin and Jungkook recorded a video of themselves watching the fireworks and saying
-                    "Love you, love you guys" to the camera before giving a finger heart.</p>
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-7">
+                <p>After <a href="#" class="text-danger">BTS</a> left the stage during the Speak Yourself Tour in Chicago, Day 2, Jimin and Jungkook recorded a video of themselves watching the fireworks and saying "Love you, love you guys" to the camera before giving a finger heart.</p>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <table class="table table-borderless table-sm small bg-light">
                     <tr>
                         <th scope="row" style="width: 100px;">Date:</th>
@@ -129,14 +122,17 @@
                     </tr>
                 </table>
             </div>
-        </div>
 
-        <div>
-            <h4 class="mt-5">Media</h4>
+        </div>
+    </section>
+
+    <section id="media">
+        <h4 class="mt-5">Media</h4>
+
+        <section id="photos">
             <h5 class="card-header mt-4 mb-2">
                 Photos
-                <a class="collapse-control" data-toggle="collapse" href="#photos-collapse" aria-expanded="true"
-                    aria-controls="photos-collapse"><i class="far fa-minus-square"></i></a>
+                <a class="collapse-control" data-toggle="collapse" href="#photos-collapse" aria-expanded="true" aria-controls="photos-collapse"><i class="far fa-minus-square"></i></a>
             </h5>
             <div id="photos-collapse" class="collapse show">
                 <div class="d-flex align-items-start flex-wrap">
@@ -146,8 +142,7 @@
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_rectangle.jpg" alt="..." class="w-100" />
-                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong,
-                            but that's what testing is for</figcaption>
+                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong, but that's what testing is for</figcaption>
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_thumbsup.png" alt="..." class="w-100" />
@@ -159,8 +154,7 @@
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_rectangle.jpg" alt="..." class="w-100" />
-                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong,
-                            but that's what testing is for</figcaption>
+                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong, but that's what testing is for</figcaption>
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_thumbsup.png" alt="..." class="w-100" />
@@ -172,8 +166,7 @@
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_rectangle.jpg" alt="..." class="w-100" />
-                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong,
-                            but that's what testing is for</figcaption>
+                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong, but that's what testing is for</figcaption>
                     </figure>
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_thumbsup.png" alt="..." class="w-100" />
@@ -181,89 +174,68 @@
                     </figure>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section id="videos">
             <h5 class="card-header mt-4 mb-2">
                 Videos
-                <a class="collapse-control" data-toggle="collapse" href="#videos-collapse" aria-expanded="true"
-                    aria-controls="videos-collapse"><i class="far fa-minus-square"></i></a>
+                <a class="collapse-control" data-toggle="collapse" href="#videos-collapse" aria-expanded="true" aria-controls="videos-collapse"><i class="far fa-minus-square"></i></a>
             </h5>
             <div id="videos-collapse" class="collapse show">
                 <div class="d-flex align-items-start flex-wrap">
                     <figure class="figure img-thumbnail m-1" style="width:150px">
                         <img src="/images/jk_rectangle.jpg" alt="..." class="w-100" />
-                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong,
-                            but that's what testing is for</figcaption>
+                        <figcaption class="small text-secondary">This is another caption that's honestly kinda llong, but that's what testing is for</figcaption>
                     </figure>
                 </div>
             </div>
-        </div>
+        </section>
+    </section>
 
-
+    <section id="sources" class="sources">
         <h4 class="mt-5">Sources</h4>
-        <table class="table table-sm table-bordered small">
-            <tr>
-                <td>
-                    1 <a href="https://twitter.com/BTS_twt/status/1127809765160230912"
-                        target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i
-                            class="fas fa-external-link-alt"></i></a>
-                </td>
-                <td>
-                    2 <a href="https://twitter.com/BTS_twt/status/1127809765160230912"
-                        target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i
-                            class="fas fa-external-link-alt"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    3 <a href="https://twitter.com/BTS_twt/status/1127809765160230912"
-                        target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i
-                            class="fas fa-external-link-alt"></i></a>
-                </td>
-            </tr>
-        </table>
-    </div>
 
-    <footer class="mt-5 bg-warning">
-        <div class="container"></div>
-        <nav class="navbar navbar-expand-sm navbar-light bg-warning">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="/images/logo.png" style="height: 30px; width: auto;"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="row">
+            <div class="col-12 col-lg-6 border small">1 <a href="https://twitter.com/BTS_twt/status/1127809765160230912" target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i class="fas fa-external-link-alt"></i></a></div>
+            <div class="col-12 col-lg-6 border small">2 <a href="https://twitter.com/BTS_twt/status/1127809765160230912" target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i class="fas fa-external-link-alt"></i></a></div>
+            <div class="col-12 col-lg-6 border small">3 <a href="https://twitter.com/BTS_twt/status/1127809765160230912" target="_blank">https://twitter.com/BTS_twt/status/1127809765160230912 <i class="fas fa-external-link-alt"></i></a></div>
+        </div>
+    </section>
+</div>
 
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy Policy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    Copyright &copy; 2019 wiznaibus
-                </div>
-            </div>
-        </nav>
-    </footer>
+<footer class="mt-5 bg-warning">
+    <div class="container"></div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <div class="container">
 
-    <script type="text/javascript">
-        $('.collapse').on('show.bs.collapse', function () {
-            $(this).parent().find('.collapse-control').html('<i class="far fa-minus-square"></i>');
-        });
+            <a class="navbar-brand d-none d-md-inline-block" href="#"><img src="/images/logo.png" style="height: 30px; width: auto;" alt=""></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="d-none d-md-inline-block">Copyright &copy; 2019 wiznaibus</div>
+        </div>
+    </nav>
+</footer>
 
-        $('.collapse').on('hide.bs.collapse', function () {
-            $(this).parent().find('.collapse-control').html('<i class="far fa-plus-square"></i>');
-        });
-    </script>
+
+
+<script type="text/javascript">
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent().find('.collapse-control').html('<i class="far fa-minus-square"></i>');
+    });
+
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent().find('.collapse-control').html('<i class="far fa-plus-square"></i>');
+    });
+</script>
 
 </body>
-
 </html>
