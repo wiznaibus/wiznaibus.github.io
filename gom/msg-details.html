@@ -13,63 +13,47 @@
 </head>
 
 <body>
-
   <header id="header"></header>
 
   <div class="container-fluid">
-
     <div id="sidebar"></div>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div
-        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Order Summary</h1>
+      <div class="pt-3 pb-2">
+        <a class="small" href="msg-inbox.html"><i class="fas fa-arrow-left"></i> Go back</a>
+        <h1 class="h2">Message</h1>
       </div>
-      <h3>Lights/BWL Japanese Album</h3>
-      <div class="row">
-        <div class="col">
-          <table class="table table-borderless table-sm small bg-light">
-              <tr>
-                  <th scope="row">#:</th>
-                  <td>524</td>
-                </tr>
-                <tr>
-                    <th scope="row">Date Created:</th>
-                    <td>2019/02/15</td>
-                  </tr>
-          </table>
-        </div>
-        <div class="col">
-          <table class="table table-borderless table-sm small bg-light">
-            <tr>
-              <th scope="row">Status:</th>
-              <td>Gauging Interest <button class="btn btn-sm btn-primary">Change</button></td>
-            </tr>
-            <tr>
-              <th scope="row">Slots Available:</th>
-              <td>50</td>
-            </tr>
-            <tr>
-              <th scope="row">Slots Filled:</th>
-              <td>2</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <h3>Merchandise Details</h3>
-      <div class="table-responsive">
-          <table class="table table-sm small">
-              <tbody>
-                  <tr>
-                      <td>
-                          <p>Boy With Luv/Lights ver. 1 - 20</p>
-                          <p>Boy With Luv/Lights ver. 2 - 5</p>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
+      <table class="table table-sm small">
+        <tbody>
+          <tr>
+            <th scope="row">From:</th>
+            <td><a href="#">other wiz</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Received:</th>
+            <td>2019/04/04</td>
+          </tr>
+          <tr>
+            <th scope="row">Category:</th>
+            <td>Updates</td>
+          </tr>
+          <tr>
+            <th scope="row">Order:</th>
+            <td><a href="#">524 - Lights/BWL Japanese Album</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Message:</th>
+            <td>
+              <p>yo wtf i'm so fucking mad i can't believe you've done this. i make $2 an hour selling used loofas and
+                cigarettes in the bed bath & beyond back alley and i'm scraping by as it is. my kids shoes are falling
+                apart and this is how you fucking treat me. i've been saving up for this album for 2 years and i just
+                want something to listen to when i have a glass of wine at the end of the night. is that too much to ask
+                for? just send me a refund already so i can buy my kids some chicken nuggets.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#newMessageModal">Reply</button>
       <footer id="footer"></footer>
     </main>
   </div>
@@ -86,7 +70,11 @@
     $(function () {
       $("#header").load("header.html");
       $("#footer").load("footer.html");
-      $("#sidebar").load("gom-sidebar.html");
+      $("#sidebar").load("msg-sidebar.html");
+
+      $(".toggle-test").click(function () {
+        $("#collapseMessage").animate({ width: "toggle" });
+      });
     });
   </script>
 </body>
