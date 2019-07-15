@@ -1,0 +1,177 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            Account <i class="fas fa-chevron-right"></i>
+        </h6>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-information.html">Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-friends.html">Friends</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-following.html">Following</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-blacklist.html">Blacklist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-notifications.html">Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="acct-settings.html">Settings</a>
+            </li>
+        </ul>
+
+        <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                Filters <i class="fas fa-chevron-right"></i>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="gom-dashboard.html">Group Order Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gom-summary.html">Group Order Manager</a>
+                </li>
+            </ul> -->
+    </div>
+</nav>
+
+<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Add to friends</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A friend request will be sent to <strong>GOM Master 2000</strong>.</p>
+                
+                <p>If they accept, you will be able to see each other's private group orders and participate in each other's group orders even if you have negative reputation.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Send request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="unfriendModal" tabindex="-1" role="dialog" aria-labelledby="unfriendModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title">Unfriend user</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to unfriend <strong>wiznaibus</strong>?</p>
+
+                <p>You will no longer be able to see each other's private group orders, and if either of you have negative reputation, you will no longer be able to participate in each other's group orders.</p>
+
+                <p>Active group orders you are participting in will be unaffected by these restrictions.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning">Unfriend</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="unfollowModal" tabindex="-1" role="dialog" aria-labelledby="unfollowModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title">Unfollow user</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to unfollow <strong>GOM Master 2000</strong>?</p>
+                <p>You will no longer receive notifications when this user lists a new group order or interest check.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning">Unfollow</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title">Report user</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">User:</label>
+                        <input class="form-control" type="text" value="wiznaibus" placeholder="Username" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Report Type:</label>
+                        <select class="form-control">
+                            <option>Harrassment</option>
+                            <option>Scam</option>
+                            <option>Breaking Rules</option>
+                            <option>is too powerful</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Details:</label>
+                        <textarea class="form-control" rows="5" id="message-text"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1" class="col-form-label">Attachments:</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+                <div class="alert alert-warning" role="alert">
+                    <i class="fas fa-exclamation-circle"></i> This user will also be removed from your friends.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger">Send report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="unblacklistModal" tabindex="-1" role="dialog" aria-labelledby="unblacklistModal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title">Remove from blacklist</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to remove <strong>wiznaibus</strong> from your blacklist?</p>
+                <p>This user will be able to view your public group orders and send you messages.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning">Unblacklist</button>
+            </div>
+        </div>
+    </div>
+</div>
