@@ -27,168 +27,262 @@
       </div>
 
       <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group mb-0">
-          <label for="exampleFormControlSelect1">Merchandise Type</label>
-        </div>
-        <div class="form-group">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Official</label>
+
+        <h4 class="mt-4 pt-3 pb-2 mb-3 border-bottom">Information</h4>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Name</strong>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Fansite</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Fanart</label>
+          <div class="form-group col-8">
+            <input class="form-control" value="Ddddddddddddddaeng!" />
           </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">URL (official store link, fansite twitter)</label>
-          <input type="text" class="form-control" value="@madein1997">
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Description</strong>
+          </div>
+          <div class="form-group col-8">
+            <textarea class="form-control" rows="5">birthday project for @limited_RM. Other description here that is very long and descriptive.
+
+Wow, such description. A description like this is sure to make you interested in this product and want to participate in this GO.</textarea>
+          </div>
         </div>
-        <div class="form-group">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Artist</label>
-                  <input type="text" class="form-control" id="inputEmail4" placeholder="">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Members</label>
-                  <input type="text" class="form-control" id="inputPassword4" placeholder="">
-                </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Privacy</strong>
+            <p>Choose the privacy level of your group order. Only users on your friends list will be able to see your private group orders.</p>
+          </div>
+          <div class="form-group col-8">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radioPublic" name="radioPublic" class="custom-control-input" checked>
+                <label class="custom-control-label" for="radioPublic">Public</label>
               </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radioPrivate" name="radioPrivate" class="custom-control-input">
+                <label class="custom-control-label" for="radioPrivate">Private</label>
+              </div>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-4">
+              <strong>Close Date</strong>
+              <p>Buyers are able to place orders until this date. Any payments due at closing will also use this date.</p>
             </div>
+            <div class="form-group col-8">
+              <input class="form-control" value="2019/09/01" />
+            </div>
+          </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Close Date</label>
-                <input type="text" class="form-control">
+        <h4 class="mt-4 pt-3 pb-2 mb-3 border-bottom">Merchandise</h4>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Type</strong>
+          </div>
+          <div class="form-group col-8">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radioOfficial" name="radioOfficial" class="custom-control-input">
+                <label class="custom-control-label" for="radioOfficial">Official</label>
               </div>
-              <div class="form-group">
-                  <label for="exampleFormControlInput1">Ship to</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Currency</label>
-                    <input type="text" class="form-control">
-                  </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlFile1" class="col-form-label">Merchandise</label>
-          <table class="table table-sm table-borderless">
-            <thead>
-              
-            </thead>
-            <tbody>
-              <tr>
-                <th class="w-50">Item</th>
-                <th>Price/ea</th>
-                <th>Limit per person</th>
-                <th>Total limit</th>
-              </tr>
-              <tr>
-                <td><input type="text" class="form-control"></td>
-                <td>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radioFansite" name="radioFansite" class="custom-control-input" checked>
+                <label class="custom-control-label" for="radioFansite">Fansite</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radioFanart" name="radioFanart" class="custom-control-input">
+                <label class="custom-control-label" for="radioFanart">Fanart</label>
+              </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>URL</strong>
+            <p>Enter a link for official merchandise, or a twitter account for fansites and fanartists.</p>
+          </div>
+          <div class="form-group col-8">
+            <input class="form-control" value="@limited_RM" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Artist</strong>
+          </div>
+          <div class="form-group col-8">
+            <input class="form-control" value="BTS" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Members</strong>
+          </div>
+          <div class="form-group col-8">
+            <input class="form-control" value="RM, SUGA, j-hope" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Items</strong>
+          </div>
+          <div class="form-group col-8">
+            <table class="table table-sm table-borderless">
+              <thead>
+                <tr>
+                  <th class="w-50">Description</th>
+                  <th>Price/ea</th>
+                  <th>Limit per person</th>
+                  <th>Total limit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control" value="Slogan"></td>
+                  <td>
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <div class="input-group-text">$</div>
                       </div>
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control" value="12.99">
                     </div>
-                </td>
-                <td><input type="number" class="form-control"></td>
-                <td><input type="number" class="form-control"></td>
-              </tr>
-              
-              <tr>
-                  <td><input type="text" class="form-control"></td>
-                  <td>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">$</div>
-                        </div>
-                        <input type="text" class="form-control">
-                      </div>
                   </td>
-                  <td><input type="number" class="form-control"></td>
-                  <td><input type="number" class="form-control"></td>
+                  <td><input type="number" class="form-control" value="5"></td>
+                  <td><input type="number" class="form-control" value="50"></td>
                 </tr>
-                
-              <tr>
-                  <td><input type="text" class="form-control"></td>
+  
+                <tr>
+                  <td><input type="text" class="form-control" value="Sticker sheets"></td>
                   <td>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">$</div>
-                        </div>
-                        <input type="text" class="form-control">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
                       </div>
+                      <input type="text" class="form-control" value="4.61">
+                    </div>
                   </td>
-                  <td><input type="number" class="form-control"></td>
-                  <td><input type="number" class="form-control"></td>
+                  <td><input type="number" class="form-control" value="0"></td>
+                  <td><input type="number" class="form-control" value="0"></td>
                 </tr>
-                
-              <tr>
-                  <td></td>
+
+                <tr>
+                  <td><input type="text" class="form-control" value="Enamel pin"></td>
+                  <td>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                      </div>
+                      <input type="text" class="form-control" value="5.00">
+                    </div>
+                  </td>
+                  <td><input type="number" class="form-control" value="10"></td>
+                  <td><input type="number" class="form-control" value="75"></td>
+                </tr>
+  
+                <tr>
+                  <td><button class="btn btn-primary">Add</button></td>
                   <td class="small">* Use $0.00 for freebies</td>
                   <td class="small">* Use 0 for unlimited</td>
                   <td class="small">* Use 0 for unlimited</td>
                 </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlFile1" class="col-form-label">Fees</label>
-          <table class="table table-sm table-borderless">
-            <thead>
-              
-            </thead>
-            <tbody>
-              <tr>
-                <th class="w-50">Name</th>
-                <th>Calculation</th>
-                <th>Amount</th>
-              </tr>
-              <tr>
-                <td><input type="text" class="form-control"></td>
-                <td>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>% of subtotal</option>
-                        <option>Flat amount</option>
-                      </select>
-                </td>
-                <td><input type="number" class="form-control"></td>
-              </tr>
-              
-              <tr>
-                  <td><input type="text" class="form-control"></td>
-                  <td>
-                      <select class="form-control" id="exampleFormControlSelect1">
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Fees</strong>
+            <p>Each fee will be applied once to each order. For fees that only apply to one item, consider adding the fee amount into that item's price.</p>
+          </div>
+          <div class="form-group col-8">
+              <table class="table table-sm table-borderless">
+                  <thead>
+                      <tr>
+                          <th class="w-50">Description</th>
+                          <th>Calculation</th>
+                          <th>Amount</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" class="form-control" value="Korgou fee"></td>
+                      <td>
+                        <select class="form-control" id="exampleFormControlSelect1">
                           <option>% of subtotal</option>
                           <option>Flat amount</option>
                         </select>
-                  </td>
-                  <td><input type="number" class="form-control"></td>
-                </tr>
-            </tbody>
-          </table>
+                      </td>
+                      <td><input type="number" class="form-control" value="2.00"></td>
+                    </tr>
+      
+                    <tr>
+                      <td><input type="text" class="form-control"></td>
+                      <td>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>% of subtotal</option>
+                          <option>Flat amount</option>
+                        </select>
+                      </td>
+                      <td><input type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                      <td><button class="btn btn-primary">Add</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Images</strong>
+          </div>
+          <div class="form-group col-8">
+            <input type="file" class="form-control-file" />
+          </div>
         </div>
 
-
-        <div class="form-group">
-          <label>Images</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <h4 class="mt-4 pt-3 pb-2 mb-3 border-bottom">Region</h4>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Currency</strong>
           </div>
+          <div class="form-group col-8">
+            <select class="form-control">
+              <option>USD $</option>
+              <option>CAN $</option>
+              <option>AUD $</option>
+              <option>EUR €</option>
+              <option>GBP £</option>
+              <option>JPY ¥</option>
+              <option>KRW ₩</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Ships from</strong>
+          </div>
+          <div class="form-group col-8">
+            <input type="text" class="form-control" value="United States" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Ships to</strong>
+          </div>
+          <div class="form-group col-8">
+            <input type="text" class="form-control" value="United States, Canada, Mexico" />
+          </div>
+        </div>
 
-          <div class="form-group">
-              <label for="exampleFormControlInput1">Terms</label>
-              <textarea class="form-control" rows="8">Please ensure you have read and understood everything before submitting your order
+        <h4 class="mt-4 pt-3 pb-2 mb-3 border-bottom">Terms</h4>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <p>Terms let buyers know what to expect when participating in a group order and help protect
+              yourself as a manager. These terms will be used by default when you create new group orders.
+              For help with setting your terms, or for examples, please visit <a href="help.html">our help
+                page</a>.</p>
+          </div>
+          <div class="form-group col-8">
+              <textarea class="form-control"
+              rows="5">Please ensure you have read and understood everything before submitting your order
 Once you submit your order, please send payment
 If you use PayPal, send using Friends & Family ONLY or you will be refunded
 EMS notices will be sent out once fansite informs me of price or when I forward packages from my Korean address
@@ -196,76 +290,122 @@ If you miss the second payment deadline, you will have to pay it twice, so pleas
 Once the goods have been received, I will send domestic emails
 If you miss the 3rd payment deadline, you will have to pay for it twice
 You will have 1 month to pay for your items upon receiving domestic before you lose the item and it is put up for reclaim without refund</textarea>
+          </div>
+        </div>
+
+        <h4 class="mt-4 pt-3 pb-2 mb-3 border-bottom">Payments</h4>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <strong>Accepted Payment Services</strong>
+          </div>
+          <div class="form-group col-8">
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <strong>Vendor</strong>
+              </div>
+              <div class="form-group col-6">
+                <strong>Account</strong>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6 mb-2">
+                <select class="form-control">
+                  <option>PayPal</option>
+                  <option>Venmo</option>
+                  <option>Zelle</option>
+                  <option>Stripe</option>
+                  <option>Square</option>
+                </select>
+              </div>
+              <div class="form-group col-6 mb-2">
+                <input class="form-control" value="wiznaibuswaltz@gmail.com" />
+              </div>
+            </div>
+            <button class="btn btn-primary mb-3">Add</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+              <strong>Payment Schedule</strong>
+            <p>Payments with a flat rate must include a price. Calculated payments can be set at a later time. Payment due dates will be calculated automatically, or you can set your own dates.</p>
+          </div>
+          <div class="form-group col-8">
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">1st payment</label>
+                <p>Calculated by goods & fees</p>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">2nd payment</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Calculated</option>
+                  <option>Flat rate</option>
+                  <option>None</option>
+                </select>
+                <input class="mt-2 form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">3rd payment</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Calculated</option>
+                  <option>Flat rate</option>
+                  <option>None</option>
+                </select>
+                <input class="mt-2 form-control" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">1st payment due</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Placing order</option>
+                  <option>EMS Shipment</option>
+                  <option>EMS Arrival</option>
+                  <option>Date</option>
+                </select>
+                <input class="mt-2 form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">2nd payment due</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Placing order</option>
+                  <option>EMS Shipment</option>
+                  <option>EMS Arrival</option>
+                  <option>Date</option>
+                  <option>None</option>
+                </select>
+                <input class="mt-2 form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">3rd payment due</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Placing order</option>
+                  <option>EMS Shipment</option>
+                  <option>EMS Arrival</option>
+                  <option>Date</option>
+                  <option>None</option>
+                </select>
+                <input class="mt-2 form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row mt-3">
+          <div class="form-group col-4">
+          </div>
+          <div class="form-group col-8">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="paymentCheck">
+              <label class="custom-control-label" for="paymentCheck">I have read and understood wizGOM's terms and conditions</label>
+            </div>
+            <div class="form-group">
+              <a href="gom-new-form-2.html" class="btn btn-primary btn-lg btn-block mt-3">Create Group Order</a>
             </div>
 
-            <div class="form-group">
-                <label>Payments</label>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">PayPal</label>
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputPassword4">Venmo</label>
-                      <input type="text" class="form-control" id="inputPassword4" placeholder="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                      <label for="inputEmail4">1st payment</label>
-                      <p>Calculated by goods & fees</p>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label for="inputPassword4">2nd payment</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Calculated</option>
-                          <option>Flat rate</option>
-                          <option>None</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label for="inputPassword4">3rd payment</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Calculated</option>
-                          <option>Flat rate</option>
-                          <option>None</option>
-                        </select>
-                    </div>
-                  </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                      <label for="inputEmail4">1st payment due</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Placing order</option>
-                          <option>EMS Shipment</option>
-                          <option>EMS Arrival</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label for="inputPassword4">2nd payment due</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Placing order</option>
-                          <option>EMS Shipment</option>
-                          <option>EMS Arrival</option>
-                          <option>None</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label for="inputPassword4">3rd payment due</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Placing order</option>
-                          <option>EMS Shipment</option>
-                          <option>EMS Arrival</option>
-                          <option>None</option>
-                        </select>
-                    </div>
-                  </div>
-
-                
-        <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Create Group Order</button>
+          </div>
+        </div>
       </form>
 
       <footer id="footer"></footer>
