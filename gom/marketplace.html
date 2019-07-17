@@ -1,224 +1,212 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="dashboard.css" rel="stylesheet">
-    <title>wizGOM</title>
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header id="header"></header>
-
-    <main role="main" id="body">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Marketplace</h1>
-                <p>All the best GOs from all the best GOMs</p>
-            </div>
-        </div>
-
+    <div class="jumbotron">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div id="sidebar"></div>
+            <h1 class="display-3">Marketplace</h1>
+            <p>All the best GOs from all the best GOMs</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div id="sidebar">
+                    <div class="d-flex justify-content-between pt-3 pb-2 mb-3 border-bottom">
+                        <h4>Search</h4>
+                    </div>
+                <table class="table table-borderless table-sm bg-light">
+                    <tr>
+                        <td>GOM</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Fansite</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td colspan="2"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Artist</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Members</td>
+                        <td><input type="text" class="form-control" /></td>
+                    <tr class="bg-white">
+                        <td colspan="2"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Status</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Creation Date</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Close Date</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                </table>
+                
+                <button class="btn btn-primary">Filter</button>
                 </div>
-                <div class="col-9">
-                    <div class="d-flex flex-wrap">
-                        <div class="col-12 col-xl-6 p-1">
-                            <div class="card">
-                                <a href="go-listing.html"><img src="images/go-image.jpg" class="card-img-top"
-                                        style="height:125px; object-fit:cover;"></a>
-                                <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                                <span class="badge badge-success">Fansite</span>
-                                                <span class="badge badge-primary">Accepting Orders</span>
-                                            </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="user-profile.html">wiznaibus</a>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <h4><a href="go-listing.html">144 - Ddddddddddddddaeng!</a></h4>
-                                    </div>
-                                    
-
-
-                                    <table class="table table-borderless table-sm small">
-                                        <tbody>
-                                            <tr>
-                                                <td class="w-50">URL: </td>
-                                                <td class="w-50">Regions: </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><a href="#">@limited_RM</a></td>
-                                                <td><a href="#">United States</a>, <a href="#">Canada</a>, <a
-                                                        href="#">Mexico</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <p class="card-text">
-                                        <p>birthday project for <a href="#">@limited_RM</a>. Other description here that
-                                            is very
-                                            long and descriptive.</p>
-                                        <p>Wow, such description. A description like thi...</p>
-                                    </p>
-                                    <a href="#imageModal"><img src="images/go-image.jpg"
-                                            style="width:100px; height:100px; object-fit:cover;"
-                                            class="img-thumbnail"></a>
-                                    <a href="#imageModal"><img src="images/go-image2.jpg"
-                                            style="width:100px; height:100px; object-fit:cover;"
-                                            class="img-thumbnail"></a>
+            </div>
+            <div class="col-9">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-xl-6 p-1">
+                        <div class="card">
+                            <a href="go-listing.html"><img src="../images/go-image.jpg" class="card-img-top"
+                                    style="height:125px; object-fit:cover;"></a>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge badge-success">Fansite</span>
+                                    <span class="badge badge-primary">Accepting Orders</span>
                                 </div>
-                                <div class="card-footer text-muted d-flex justify-content-between">
-                                    <span class="small">48 days remaining</span>
-                                    
+                                <div class="d-flex justify-content-between">
+                                    <a href="user-profile.html">wiznaibus</a>
                                 </div>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="go-listing.html">144 - Ddddddddddddddaeng!</a></h4>
+                                </div>
+
+
+
+                                <table class="table table-borderless table-sm small">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-50">URL: </td>
+                                            <td class="w-50">Regions: </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="#">@limited_RM</a></td>
+                                            <td><a href="#">United States</a>, <a href="#">Canada</a>, <a
+                                                    href="#">Mexico</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p class="card-text">
+                                    <p>birthday project for <a href="#">@limited_RM</a>. Other description here that
+                                        is very
+                                        long and descriptive.</p>
+                                    <p>Wow, such description. A description like thi...</p>
+                                </p>
+                                <a href="#imageModal"><img src="../images/go-image.jpg"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                                <a href="#imageModal"><img src="../images/go-image2.jpg"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between">
+                                <span class="small">48 days remaining</span>
+
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-xl-6 p-1">
-                                <div class="card">
-                                    <a href="go-listing.html"><img src="images/go-image2.jpg" class="card-img-top"
-                                            style="height:125px; object-fit:cover;"></a>
-                                    <div class="card-body">
-                                            <div class="d-flex justify-content-between">
-                                                    <span class="badge badge-success">Fansite</span>
-                                                    <span class="badge badge-primary">Accepting Orders</span>
-                                                </div>
-                                        <div class="d-flex justify-content-between">
-                                            <a href="user-profile.html">wiznaibus</a>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <h4><a href="go-listing.html">12345 - super cool fansite order 4000</a></h4>
-                                        </div>
-                                        
-    
-    
-                                        <table class="table table-borderless table-sm small">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w-50">URL: </td>
-                                                    <td class="w-50">Regions: </td>
-                                                </tr>
-    
-                                                <tr>
-                                                    <td><a href="#">@MADEIN1997</a></td>
-                                                    <td><a href="#">United States</a>, <a href="#">Canada</a>, <a
-                                                        href="#">Mexico</a>, <a href="#">United States</a>, <a href="#">Canada</a>, <a
-                                                        href="#">Mexico</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-    
-                                        <p class="card-text">
-                                            <p>idk something with a kinda long description. we're just testing how the layout would look with a few different examples. fun stuff.</p>
-                                        </p>
-                                    </div>
-                                    <div class="card-footer text-muted d-flex justify-content-between">
-                                        <span class="small">10 days remaining</span>
-                                        
-                                    </div>
+                    <div class="col-12 col-xl-6 p-1">
+                        <div class="card">
+                            <a href="go-listing.html"><img src="../images/go-image2.jpg" class="card-img-top"
+                                    style="height:125px; object-fit:cover;"></a>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge badge-success">Fansite</span>
+                                    <span class="badge badge-primary">Accepting Orders</span>
                                 </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="user-profile.html">wiznaibus</a>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="go-listing.html">12345 - super cool fansite order 4000</a></h4>
+                                </div>
+
+
+
+                                <table class="table table-borderless table-sm small">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-50">URL: </td>
+                                            <td class="w-50">Regions: </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="#">@MADEIN1997</a></td>
+                                            <td><a href="#">United States</a>, <a href="#">Canada</a>, <a
+                                                    href="#">Mexico</a>, <a href="#">United States</a>, <a
+                                                    href="#">Canada</a>, <a href="#">Mexico</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p class="card-text">
+                                    <p>idk something with a kinda long description. we're just testing how the layout
+                                        would look with a few different examples. fun stuff.</p>
+                                </p>
                             </div>
+                            <div class="card-footer text-muted d-flex justify-content-between">
+                                <span class="small">10 days remaining</span>
 
-                            <div class="col-12 col-xl-6 p-1">
-                                    <div class="card">
-                                        <a href="go-listing.html"><img src="images/jin_scream.png" class="card-img-top"
-                                                style="height:125px; object-fit:cover;"></a>
-                                        <div class="card-body">
-                                                <div class="d-flex justify-content-between">
-                                                        <span class="badge badge-danger">Official</span>
-                                                    </div>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="user-profile.html">wiznaibus</a>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <h4><a href="go-listing.html">524 - Lights/BWL Japanese Album</a></h4>
-                                            </div>
-                                            
-        
-        
-                                            <table class="table table-borderless table-sm small">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="w-50">URL: </td>
-                                                        <td class="w-50">Regions: </td>
-                                                    </tr>
-        
-                                                    <tr>
-                                                        <td><a href="#">@Weply</a></td>
-                                                        <td><a href="#">United States</a>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-        
-                                            <p class="card-text">
-                                                <p>Orders for set of all 4 versions only.</p>
-                                            </p>
-                                            <a href="#imageModal"><img src="images/jin_scream.png"
-                                                style="width:100px; height:100px; object-fit:cover;"
-                                                class="img-thumbnail"></a>
-                                                <a href="#imageModal"><img src="images/jm_laugh.png"
-                                                    style="width:100px; height:100px; object-fit:cover;"
-                                                    class="img-thumbnail"></a>
-                                                    <a href="#imageModal"><img src="images/tae_crie.png"
-                                                        style="width:100px; height:100px; object-fit:cover;"
-                                                        class="img-thumbnail"></a>
-                                                        <a href="#imageModal"><img src="images/jk_thumbsup.png"
-                                                            style="width:100px; height:100px; object-fit:cover;"
-                                                            class="img-thumbnail"></a>
-                                        </div>
-                                        <div class="card-footer text-muted d-flex justify-content-between">
-                                            <span class="small text-danger">Closed</span>
-                                            
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 p-1">
+                        <div class="card">
+                            <a href="go-listing.html"><img src="../images/jin_scream.png" class="card-img-top"
+                                    style="height:125px; object-fit:cover;"></a>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge badge-danger">Official</span>
                                 </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="user-profile.html">wiznaibus</a>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="go-listing.html">524 - Lights/BWL Japanese Album</a></h4>
+                                </div>
+
+
+
+                                <table class="table table-borderless table-sm small">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-50">URL: </td>
+                                            <td class="w-50">Regions: </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="#">@Weply</a></td>
+                                            <td><a href="#">United States</a>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p class="card-text">
+                                    <p>Orders for set of all 4 versions only.</p>
+                                </p>
+                                <a href="#imageModal"><img src="../images/jin_scream.png"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                                <a href="#imageModal"><img src="../images/jm_laugh.png"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                                <a href="#imageModal"><img src="../images/tae_crie.png"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                                <a href="#imageModal"><img src="../images/jk_thumbsup.png"
+                                        style="width:100px; height:100px; object-fit:cover;" class="img-thumbnail"></a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between">
+                                <span class="small text-danger">Closed</span>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </main>
 
-    <div class="container">
-        <footer id="footer"></footer>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-            $("#sidebar").load("mkt-sidebar.html");
-        });
-    </script>
-</body>
-
-</html>
