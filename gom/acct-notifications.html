@@ -1,258 +1,213 @@
-<!doctype html>
-<html lang="en">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
+  <h1 class="h2">Notifications</h1>
+</div>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="../dashboard.css" rel="stylesheet">
-  <title>wizGOM</title>
-</head>
+<table class="table table-sm">
+  <tbody>
+    <tr>
+      <th>
+        <h4 class="pt-3">General</h4>
+      </th>
+      <th></th>
+      <th>App</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <th scope="row">Site Messages</th>
+      <td>Receive important information and updates from wizGOM.</td>
+      <td>
+        <div class="custom-control custom-checkbox"><input class="form-check-input" type="checkbox" checked disabled>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
 
-<body>
+    <tr>
+      <th>
+        <h4 class="pt-3">Buying</h4>
+      </th>
+      <th></th>
+      <th>App</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <th scope="row">Order Confirmed</th>
+      <td>Get notified when your order is confirmed by the group order manager.</td>
+      <td>
+        <div class="custom-control custom-checkbox checked"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Payment Received</th>
+      <td>Get notified when a manager receives your payments for a group order.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Item Shipped</th>
+      <td>Get notified when a group order manager ships your item.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Reputation Given</th>
+      <td>Get notified when a group order manager gives you reputation.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
 
-  <header id="header"></header>
+    <tr>
+      <th>
+        <h4 class="pt-3">Selling</h4>
+      </th>
+      <th></th>
+      <th>App</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <th scope="row">Order Placed</th>
+      <td>Get notified when a user places an order in one of your group orders.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Payment Sent</th>
+      <td>Get notified when a user sends payments for your group order.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Item Received</th>
+      <td>Get notified when a user confirms they received their shipment.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Reputation Given</th>
+      <td>Get notified when a user gives you reputation.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
 
-  <div class="container-fluid">
+    <tr>
+      <th>
+        <h4 class="pt-3">Messages</h4>
+      </th>
+      <th></th>
+      <th>App</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <th scope="row">Message Received</th>
+      <td>Get notified when you receive a new message.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Action Reminder</th>
+      <td>Get notified when you need to take action on a message.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
+      </td>
+    </tr>
 
-    <div id="sidebar"></div>
-
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
-        <h1 class="h2">Notifications</h1>
-      </div>
-
-      <table class="table table-sm">
-        <tbody>
-          <tr>
-            <th>
-              <h4 class="pt-3">General</h4>
-            </th>
-            <th></th>
-            <th>App</th>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <th scope="row">Site Messages</th>
-            <td>Receive important information and updates from wizGOM.</td>
-            <td>
-              <div class="custom-control custom-checkbox"><input class="form-check-input" type="checkbox" checked
-                  disabled></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <h4 class="pt-3">Buying</h4>
-            </th>
-            <th></th>
-            <th>App</th>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <th scope="row">Order Confirmed</th>
-            <td>Get notified when your order is confirmed by the group order manager.</td>
-            <td>
-              <div class="custom-control custom-checkbox checked"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Payment Received</th>
-            <td>Get notified when a manager receives your payments for a group order.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Item Shipped</th>
-            <td>Get notified when a group order manager ships your item.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Reputation Given</th>
-            <td>Get notified when a group order manager gives you reputation.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <h4 class="pt-3">Selling</h4>
-            </th>
-            <th></th>
-            <th>App</th>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <th scope="row">Order Placed</th>
-            <td>Get notified when a user places an order in one of your group orders.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Payment Sent</th>
-            <td>Get notified when a user sends payments for your group order.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Item Received</th>
-            <td>Get notified when a user confirms they received their shipment.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Reputation Given</th>
-            <td>Get notified when a user gives you reputation.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <h4 class="pt-3">Messages</h4>
-            </th>
-            <th></th>
-            <th>App</th>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <th scope="row">Message Received</th>
-            <td>Get notified when you receive a new message.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Action Reminder</th>
-            <td>Get notified when you need to take action on a message.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <h4 class="pt-3">Friends/Following</h4>
-            </th>
-            <th></th>
-            <th>App</th>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <th scope="row">New Friend Request</th>
-            <td>Get notified when a user sends you a friend request.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Friend Request Approved</th>
-            <td>Get notified when a user accepts your friend request.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">New Follower</th>
-            <td>Get notified when a user follows you.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">New Group Order</th>
-            <td>Get notified when a user you are following creates a new group order.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">New Private Group Order</th>
-            <td>Get notified when your friends create a new private group order.</td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-            <td>
-              <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <footer id="footer"></footer>
-    </main>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-      $("#sidebar").load("acct-sidebar.html");
-    });
-  </script>
-</body>
-
-</html>
+    <tr>
+      <th>
+        <h4 class="pt-3">Friends/Following</h4>
+      </th>
+      <th></th>
+      <th>App</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <th scope="row">New Friend Request</th>
+      <td>Get notified when a user sends you a friend request.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Friend Request Approved</th>
+      <td>Get notified when a user accepts your friend request.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox" checked></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">New Follower</th>
+      <td>Get notified when a user follows you.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">New Group Order</th>
+      <td>Get notified when a user you are following creates a new group order.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">New Private Group Order</th>
+      <td>Get notified when your friends create a new private group order.</td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+      <td>
+        <div class="custom-control"><input class="form-check-input" type="checkbox"></div>
+      </td>
+    </tr>
+  </tbody>
+</table>

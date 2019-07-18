@@ -1,85 +1,39 @@
-<!doctype html>
-<html lang="en">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Following</h1>
+</div>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="../dashboard.css" rel="stylesheet">
-  <title>wizGOM</title>
-</head>
+<div class="alert alert-info" role="alert">
+  <i class="fas fa-info-circle"></i> You will receive notifications whenever a user you are following lists a new group
+  order.
+</div>
 
-<body>
-
-  <header id="header"></header>
-
-  <div class="container-fluid">
-
-    <div id="sidebar"></div>
-
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div
-        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Following</h1>
-      </div>
-
-      <div class="alert alert-info" role="alert">
-          <i class="fas fa-info-circle"></i> You will receive notifications whenever a user you are following lists a new group order.
-      </div>
-
-      <div class="d-flex flex-wrap">
-        <div class="w-25 p-1">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <h4><a href="user-profile.html">GOM Master 2000</a></h4>
-                    <a href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v ml-1 mr-1"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
-                        <h6 class="dropdown-header">Actions</h6>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#friendModal">Add to friends</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#unfollowModal">Unfollow</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#reportModal">Report</a>
-                    </div>
-                </div>
-                <p class="card-text">Part-time GOM, full-time fan. Feel free to drop me a message if you have any questions! I always rep an...</p>
-                <table class="table table-borderless table-sm small bg-light">
-                    <tbody>
-                        <tr>
-                            <td>4588 Reputation</td>
-                            <td>177 Open Orders</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="user-orders.html" class="btn btn-sm btn-success">View group orders</a>
-              </div>
-            </div>
+<div class="d-flex flex-wrap">
+  <div class="w-25 p-1">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <h4><a href="user-profile.html">GOM Master 2000</a></h4>
+          <a href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+              class="fas fa-ellipsis-v ml-1 mr-1"></i></a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+            <h6 class="dropdown-header">Actions</h6>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#friendModal">Add to friends</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#unfollowModal">Unfollow</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#reportModal">Report</a>
+          </div>
         </div>
+        <p class="card-text">Part-time GOM, full-time fan. Feel free to drop me a message if you have any questions! I
+          always rep an...</p>
+        <table class="table table-borderless table-sm small bg-light">
+          <tbody>
+            <tr>
+              <td>4588 Reputation</td>
+              <td>177 Open Orders</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="user-profile.html" class="btn btn-sm btn-success">View group orders</a>
       </div>
-
-
-
-      <footer id="footer"></footer>
-    </main>
+    </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-      $("#sidebar").load("acct-sidebar.html");
-    });
-  </script>
-</body>
-
-</html>
+</div>
