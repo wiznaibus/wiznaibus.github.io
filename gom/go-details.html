@@ -1,3 +1,120 @@
+<style>
+.progress-alt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  color: #849397;
+}
+.progress-alt > li {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  /* font-size: 0.8em; */
+}
+.progress-alt > li:before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto;
+  background: #DFE3E4;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  margin-bottom: 0.25em;
+  line-height: 3em;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1000;
+}
+.progress-alt > li:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #DFE3E4;
+  width: 100%;
+  height: 0.5em;
+  top: 1.25em;
+  left: 50%;
+  margin-left: 1.5em\9;
+  z-index: -1;
+}
+.progress-alt > li:last-child:after {
+  display: none;
+}
+.progress-alt > li.is-complete {
+  color: #28a745;
+}
+.progress-alt > li.is-complete:before, .progress-alt > li.is-complete:after {
+  color: #FFF;
+  background: #28a745;
+}
+.progress-alt > li.is-active {
+  color: #007bff;
+}
+.progress-alt > li.is-active:before {
+  color: #FFF;
+  background: #007bff;
+}
+
+/**
+ * Needed for IE8
+ */
+.progress-alt__last:after {
+  display: none !important;
+}
+
+/**
+ * Size Extensions
+ */
+.progress-alt--medium {
+  font-size: 1.5em;
+}
+
+.progress-alt--large {
+  font-size: 2em;
+}
+
+/**
+ * Some Generic Stylings
+ */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 1.5em;
+}
+
+.progress-alt {
+  margin-bottom: 3em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.progress-alt {
+  text-align: center;
+}
+</style>
+
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
   <h1 class="h2">Order Details</h1>
 </div>
+
+<ol class="progress-alt">
+    <!-- <li class="is-complete" data-step="1">Step 1</li> -->
+    <li class="is-active" data-step="1">Accepting Orders</li>
+    <li data-step="2">Finalizing Orders</li>
+    <li data-step="3">Production</li>
+    <li data-step="4">EMS</li>
+    <li data-step="5">Processing</li>
+    <li data-step="6">Shipping</li>
+    <li data-step="7" class="progress-alt__last">Complete</li>
+  </ol>
