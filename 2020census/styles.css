@@ -1,0 +1,40 @@
+@media (min-width: 576px) {
+    body {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+      max-width: 960px;
+    }
+}
+
+body {
+    width: 100%;
+    /* background-color: #d2c0b2; */
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 15px;
+    /* border: 120px solid transparent;
+    border-image-source: url("images/border_small.png");
+    border-image-slice: 115 120;
+    border-image-repeat: stretch; */
+}
+
+.result-chart {
+    min-height: 300px;
+    width: 100%;
+    margin-bottom: 2em;
+}

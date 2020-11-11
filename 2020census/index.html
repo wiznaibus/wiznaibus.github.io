@@ -5,550 +5,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <style>
-        @media (min-width: 576px) {
-            body {
-                max-width: 540px;
-            }
-        }
-
-        @media (min-width: 768px) {
-            body {
-                max-width: 720px;
-            }
-        }
-        body {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .result-chart {
-            height: 300px;
-            width: 100%;
-        }
-    </style>
-    <script type="text/javascript">
-        window.onload = function () {
-            var chart01 = new CanvasJS.Chart("chartQuestion01", {
-                title: {
-                    text: "What is your age?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart02 = new CanvasJS.Chart("chartQuestion02", {
-                title: {
-                    text: "What is your gender?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart03 = new CanvasJS.Chart("chartQuestion03", {
-                title: {
-                    text: "Are you transgender?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart04 = new CanvasJS.Chart("chartQuestion04", {
-                title: {
-                    text: "What is your sexuality?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart05 = new CanvasJS.Chart("chartQuestion05", {
-                title: {
-                    text: "What is your relationship status?"
-                },
-                data: [{
-                    type: "pie",
-                    dataPoints: [
-                        { label: "Single", y: 80 },
-                        { label: "In a relationship", y: 16 },
-                        { label: "Engaged", y: 4 },
-                        { label: "Married", y: 9 },
-                        { label: "Prefer not to say", y: 4 }
-                    ]
-                }]
-            });
-
-            var chart06 = new CanvasJS.Chart("chartQuestion06", {
-                title: {
-                    text: "What is your country of residence?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart07 = new CanvasJS.Chart("chartQuestion07", {
-                title: {
-                    text: "How would you describe your racial and ethnic background?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart08 = new CanvasJS.Chart("chartQuestion08", {
-                title: {
-                    text: "What is your occupational status?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart09 = new CanvasJS.Chart("chartQuestion09", {
-                title: {
-                    text: "Which categories best describe your occupation?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart10 = new CanvasJS.Chart("chartQuestion10", {
-                title: {
-                    text: "Are you currently a student?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart11 = new CanvasJS.Chart("chartQuestion11", {
-                title: {
-                    text: "What is your education level? (If you are a student, please select the highest degree you have received)"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart12 = new CanvasJS.Chart("chartQuestion12", {
-                title: {
-                    text: "Please list your educational field(s) of study"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart13 = new CanvasJS.Chart("chartQuestion13", {
-                title: {
-                    text: "Have you ever been to South Korea?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart14 = new CanvasJS.Chart("chartQuestion14", {
-                title: {
-                    text: "Do you want to visit Korea?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart15 = new CanvasJS.Chart("chartQuestion15", {
-                title: {
-                    text: "Do you speak Korean?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart16 = new CanvasJS.Chart("chartQuestion16", {
-                title: {
-                    text: "Are you studying Korean?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart17 = new CanvasJS.Chart("chartQuestion17", {
-                title: {
-                    text: "Did you listen to Kpop before ONEUS?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart18 = new CanvasJS.Chart("chartQuestion18", {
-                title: {
-                    text: "How long have you been listening to Kpop?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart19 = new CanvasJS.Chart("chartQuestion19", {
-                title: {
-                    text: "How many Kpop artists would you consider yourself a fan/stan of?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart20 = new CanvasJS.Chart("chartQuestion20", {
-                title: {
-                    text: "What types of Kpop artists are you mostly a fan of?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart21 = new CanvasJS.Chart("chartQuestion21", {
-                title: {
-                    text: "How long have you been a fan of ONEUS?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart22 = new CanvasJS.Chart("chartQuestion22", {
-                title: {
-                    text: "How did you discover ONEUS?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart23 = new CanvasJS.Chart("chartQuestion23", {
-                title: {
-                    text: "How do you obtain ONEUS' music?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart24 = new CanvasJS.Chart("chartQuestion24", {
-                title: {
-                    text: "Do you buy ONEUS-related products?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart25 = new CanvasJS.Chart("chartQuestion25", {
-                title: {
-                    text: "Have you seen ONEUS perform in person?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart26 = new CanvasJS.Chart("chartQuestion26", {
-                title: {
-                    text: "Are you a member of the fancafe?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart27 = new CanvasJS.Chart("chartQuestion27", {
-                title: {
-                    text: "How do you get news and updates about ONEUS?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart28 = new CanvasJS.Chart("chartQuestion28", {
-                title: {
-                    text: "How often do you visit ONEUScord?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart29 = new CanvasJS.Chart("chartQuestion29", {
-                title: {
-                    text: "How often do you visit /r/ONEUS?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart30 = new CanvasJS.Chart("chartQuestion30", {
-                title: {
-                    text: "Who is your favorite member/bias?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart31 = new CanvasJS.Chart("chartQuestion31", {
-                title: {
-                    text: "Who is your second-favorite member?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart32 = new CanvasJS.Chart("chartQuestion32", {
-                title: {
-                    text: "What is your favorite album?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart33 = new CanvasJS.Chart("chartQuestion33", {
-                title: {
-                    text: "What is your favorite music video?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart34 = new CanvasJS.Chart("chartQuestion34", {
-                title: {
-                    text: "What is your favorite song choreography? (The dance itself, not a specific video or performance)"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            var chart35 = new CanvasJS.Chart("chartQuestion35", {
-                title: {
-                    text: "What are your favorite songs?"
-                },
-                data: [{
-                    type: "column",
-                    dataPoints: [
-                        { label: "banana", y: 18 }
-                    ]
-                }]
-            });
-
-            chart01.render();
-            chart02.render();
-            chart03.render();
-            chart04.render();
-            chart05.render();
-            chart06.render();
-            chart07.render();
-            chart08.render();
-            chart09.render();
-            chart10.render();
-            chart11.render();
-            chart12.render();
-            chart13.render();
-            chart14.render();
-            chart15.render();
-            chart16.render();
-            chart17.render();
-            chart18.render();
-            chart19.render();
-            chart20.render();
-            chart21.render();
-            chart22.render();
-            chart23.render();
-            chart24.render();
-            chart25.render();
-            chart26.render();
-            chart27.render();
-            chart28.render();
-            chart29.render();
-            chart30.render();
-            chart31.render();
-            chart32.render();
-            chart33.render();
-            chart34.render();
-            chart35.render();
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="canvasjs.js"></script>
 </head>
 
 <body>
-    <h1>ONEUScord and /r/ONEUS 2020 Census Results</h1>
-    <p>Paragraph talking about the census results.</p>
+    <div class="main">
+        <p>
+            <img src="images/icon.png" style="height: 100px; width: auto; display: block; margin: 0 auto;" />
+        </p>
+        <h1>ONEUScord and /r/ONEUS 2020 Census Results</h1>
+        <p>Paragraph talking about the census results.</p>
 
-    <p>Note that not all users responded to every question so totals may differ.</p>
+        <p>Note that not all users responded to every question so totals may differ.</p>
 
-    <h2>Demographics</h2>
-    <div class="result-chart" id="chartQuestion01"></div>
-    <div class="result-chart" id="chartQuestion02"></div>
-    <div class="result-chart" id="chartQuestion03"></div>
-    <div class="result-chart" id="chartQuestion04"></div>
-    <div class="result-chart" id="chartQuestion05"></div>
-    <div class="result-chart" id="chartQuestion06"></div>
-    <div class="result-chart" id="chartQuestion07"></div>
+        <h2>Demographics</h2>
+        <div class="result-chart" id="chartQuestion01"></div>
+        <div class="result-chart" id="chartQuestion02"></div>
+        <div class="result-chart" id="chartQuestion03"></div>
+        <div class="result-chart" id="chartQuestion04"></div>
+        <div class="result-chart" id="chartQuestion05"></div>
+        <div class="result-chart" id="chartQuestion06"></div>
+        <div class="result-chart" id="chartQuestion07"></div>
 
-    <h2>Education, employment, and household</h2>
-    <div class="result-chart" id="chartQuestion08"></div>
-    <div class="result-chart" id="chartQuestion09"></div>
-    <div class="result-chart" id="chartQuestion10"></div>
-    <div class="result-chart" id="chartQuestion11"></div>
-    <div class="result-chart" id="chartQuestion12"></div>
+        <h2>Education, employment, and household</h2>
+        <div class="result-chart" id="chartQuestion08"></div>
+        <div class="result-chart" id="chartQuestion09"></div>
+        <div class="result-chart" id="chartQuestion10"></div>
+        <div class="result-chart" id="chartQuestion11"></div>
+        <div class="result-chart" id="chartQuestion12"></div>
 
-    <h2>South Korea and the Korean language</h2>
-    <div class="result-chart" id="chartQuestion13"></div>
-    <div class="result-chart" id="chartQuestion14"></div>
-    <div class="result-chart" id="chartQuestion15"></div>
-    <div class="result-chart" id="chartQuestion16"></div>
-    
-    <h2>You and Kpop</h2>
-    <div class="result-chart" id="chartQuestion17"></div>
-    <div class="result-chart" id="chartQuestion18"></div>
-    <div class="result-chart" id="chartQuestion19"></div>
-    <div class="result-chart" id="chartQuestion20"></div>
-    
-    <h2>You and ONEUS</h2>
-    <div class="result-chart" id="chartQuestion21"></div>
-    <div class="result-chart" id="chartQuestion22"></div>
-    <div class="result-chart" id="chartQuestion23"></div>
-    <div class="result-chart" id="chartQuestion24"></div>
-    <div class="result-chart" id="chartQuestion25"></div>
-    <div class="result-chart" id="chartQuestion26"></div>
-    <div class="result-chart" id="chartQuestion27"></div>
-    <div class="result-chart" id="chartQuestion28"></div>
-    <div class="result-chart" id="chartQuestion29"></div>
-    
-    <h2>Favoritism</h2>
-    <div class="result-chart" id="chartQuestion30"></div>
-    <div class="result-chart" id="chartQuestion31"></div>
-    <div class="result-chart" id="chartQuestion32"></div>
-    <div class="result-chart" id="chartQuestion33"></div>
-    <div class="result-chart" id="chartQuestion34"></div>
-    <div class="result-chart" id="chartQuestion35"></div>
+        <h2>South Korea and the Korean language</h2>
+        <div class="result-chart" id="chartQuestion13"></div>
+        <div class="result-chart" id="chartQuestion14"></div>
+        <div class="result-chart" id="chartQuestion15"></div>
+        <div class="result-chart" id="chartQuestion16"></div>
+        
+        <h2>You and Kpop</h2>
+        <div class="result-chart" id="chartQuestion17"></div>
+        <div class="result-chart" id="chartQuestion18"></div>
+        <div class="result-chart" id="chartQuestion19"></div>
+        <div class="result-chart" id="chartQuestion20"></div>
+        
+        <h2>You and ONEUS</h2>
+        <div class="result-chart" id="chartQuestion21"></div>
+        <div class="result-chart" id="chartQuestion22"></div>
+        <div class="result-chart" id="chartQuestion23"></div>
+        <div class="result-chart" id="chartQuestion24"></div>
+        <div class="result-chart" id="chartQuestion25"></div>
+        <div class="result-chart" id="chartQuestion26"></div>
+        <div class="result-chart" id="chartQuestion27"></div>
+        <div class="result-chart" id="chartQuestion28"></div>
+        <div class="result-chart" id="chartQuestion29"></div>
+        
+        <h2>Favoritism</h2>
+        <div class="result-chart" id="chartQuestion30"></div>
+        <div class="result-chart" id="chartQuestion31"></div>
+        <div class="result-chart" id="chartQuestion32"></div>
+        <div class="result-chart" id="chartQuestion33"></div>
+        <div class="result-chart" id="chartQuestion34"></div>
+        <div class="result-chart" id="chartQuestion35" style="height: 500px;"></div>
+    </div>
 </body>
 
 </html>
