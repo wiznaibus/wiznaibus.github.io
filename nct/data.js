@@ -1,6 +1,6 @@
 data = {
     "members": [
-        "Taeil", "Johnny", "Taeyong", "Yuta", "Kun", "Doyoung", "Ten", "Jaehyun", "Winwin", "Jungwoo", "Lucas", "Mark", "Xiaojun", "Hendery", "Renjun", "Jeno", "Haechan", "Jaemin", "Yangyang", "Shotaro", "Chenle", "Sungchan", "Jisung"
+        "Taeil", "Johnny", "Taeyong", "Yuta", "Kun", "Doyoung", "Ten", "Jaehyun", "Winwin", "Jungwoo", "Lucas", "Mark", "Xiaojun", "Hendery", "Renjun", "Jeno", "Haechan", "Jaemin", "Yangyang", "Shotaro", "Sungchan", "Chenle", "Jisung"
     ],
     "albums": [
         {
@@ -41,8 +41,8 @@ data = {
                 "Jaemin",
                 "Yangyang",
                 "Shotaro",
-                "Chenle",
                 "Sungchan",
+                "Chenle",
                 "Jisung"
             ],
             "tracks": [
@@ -302,8 +302,8 @@ data = {
                 "Jaemin",
                 "Yangyang",
                 "Shotaro",
-                "Chenle",
                 "Sungchan",
+                "Chenle",
                 "Jisung"
             ],
             "tracks": [
@@ -675,8 +675,8 @@ data = {
                 "Jaemin",
                 "Yangyang",
                 "Shotaro",
-                "Chenle",
                 "Sungchan",
+                "Chenle",
                 "Jisung"
             ],
             "tracks": [
@@ -708,8 +708,8 @@ data = {
                         "Jaemin",
                         "Yangyang",
                         "Shotaro",
-                        "Chenle",
                         "Sungchan",
+                        "Chenle",
                         "Jisung"
                     ]
                 }
@@ -1140,13 +1140,9 @@ data = {
                         "Korean"
                     ],
                     "participating_members": [
-                        "Mark",
                         "Renjun",
-                        "Jeno",
                         "Haechan",
-                        "Jaemin",
                         "Chenle",
-                        "Jisung"
                     ]
                 },
                 {
