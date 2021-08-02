@@ -919,11 +919,7 @@ data = {
                     "participating_members": [
                         "Kun",
                         "Ten",
-                        "Winwin",
-                        "Lucas",
                         "Xiaojun",
-                        "Hendery",
-                        "Yangyang"
                     ]
                 },
                 {
