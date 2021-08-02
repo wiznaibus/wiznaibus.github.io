@@ -1435,13 +1435,9 @@ data = {
                         "Korean"
                     ],
                     "participating_members": [
-                        "Mark",
                         "Renjun",
-                        "Jeno",
                         "Haechan",
-                        "Jaemin",
                         "Chenle",
-                        "Jisung"
                     ]
                 },
                 {
