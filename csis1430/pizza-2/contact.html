@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="img/pizzaheader.png" />
+        </div>
+        <div class="nav-menu">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item selected" href="contact.html">Contact</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="order.html">Order</a>
+        </div>
+        
+        <main class="main">
+            <div class="split">
+                <img src="img/contact.jpg" alt="Hi, I'm Mr. Pizzahead!" />
+                <div>
+                    <h1>Contact</h1>
+                    <p>You may fill out this form to send us a message. We will do with your message what we do with every message and print it out and feed it to our pet bird.</p>
+                    <p>We do not read our feedback.</p>
+                    <form action="https://www.stonecoldprofessor.com/pizza-contact.php" method="post">
+                        <fieldset>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" value="" />
+        
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" value="" />
+        
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="message">Message</label>
+                            <textarea rows="4" id="message" name="message"></textarea>
+                        </fieldset>
+                        <fieldset class="inline">
+                            <button type="submit">Send</button>
+                            <button type="reset">Clear</button>
+                        </fieldset>
+                    </form>
+            </div>
+        </main>
+
+        <footer class="footer">Not copyright &copy; 2022 Natalie Mueller</footer>
+        
+        <script src="js/script.js" async defer></script>
+    </body>
+</html>

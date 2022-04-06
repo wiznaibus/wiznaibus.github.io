@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="img/pizzaheader.png" />
+        </div>
+        <div class="nav-menu">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item selected" href="order.html">Order</a>
+        </div>
+        
+        <main class="main">
+            <h1>Order</h1>
+            <p>Use this form to order a pizza. Or don't. We won't deliver whether you order anything or not.</p>
+            <img class="wide" src="img/order.jpg" />
+
+            <form action="https://www.stonecoldprofessor.com/pizza-order.php" method="post">
+                <div class="split">
+                    <div>
+                        <h3>Toppings</h3>
+                        <fieldset class="grid">
+                            <input type="checkbox" name="toppings[]" id="Pepp" value="Pepp" />
+                            <label for="Pepp">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Pepp
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="Arugula" value="Arugula" />
+                            <label for="Arugula">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Arugula
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="Splicy" value="Splicy" />
+                            <label for="Splicy">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Splicy
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="French" value="French" />
+                            <label for="French">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                French
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="Sock" value="Sock" />
+                            <label for="Sock">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Sock
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="A Candlestick" value="A Candlestick" />
+                            <label for="A Candlestick">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                A Candlestick
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="Pineapple" value="Pineapple" />
+                            <label for="Pineapple">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Pineapple
+                            </label>
+                            <input type="checkbox" name="toppings[]" id="Pizza" value="Pizza" />
+                            <label for="Pizza">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Pizza
+                            </label>
+                        </fieldset>
+                        <h3>Crust</h3>
+                        <fieldset class="inline">
+                            <input type="radio" name="crust" id="Crusty" value="Crusty" />
+                            <label for="Crusty">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Crusty
+                            </label>
+                            <input type="radio" name="crust" id="Soggy" value="Soggy" />
+                            <label for="Soggy">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Soggy
+                            </label>
+                            <input type="radio" name="crust" id="Furry" value="Furry" />
+                            <label for="Furry">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Furry
+                            </label>
+                            <input type="radio" name="crust" id="Smelly" value="Smelly" />
+                            <label for="Smelly">
+                                <img class="form-image" src="img/pizzaheader.png" />
+                                Smelly
+                            </label>
+                        </fieldset>
+                        <h3>Size</h3>
+                        <fieldset>
+                            <select name="size">
+                                <option name="Smol">Smol</option>
+                                <option name="Med">Med</option>
+                                <option name="Big Med">Big Med</option>
+                                <option name="Lage">Lage</option>
+                                <option name="2 Fulbal">2 Fulbal</option>
+                            </select>
+                        </fieldset>
+                        <h3>Contact</h3>
+                        <fieldset>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="" />
+        
+                            <label for="comments">Comments</label>
+                            <textarea rows="4" id="comments" name="comments"></textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <h3>Customer</h3>
+                        <fieldset>
+                            <label for="first">First Name</label>
+                            <input type="text" id="first" name="first" value="" />
+        
+                            <label for="last">Last Name</label>
+                            <input type="text" id="last" name="last" value="" />
+        
+                            <label for="email">Phone</label>
+                            <input type="tel" id="phone" name="phone" value="" />
+                        </fieldset>
+                        <h3>Delivery</h3>
+                        <fieldset>
+                            <label for="add1">Address 1</label>
+                            <input type="text" id="add1" name="add1" value="" />
+        
+                            <label for="add2">Address 2</label>
+                            <input type="text" id="add2" name="add2" value="" />
+        
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" value="" />
+        
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" value="" />
+        
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" value="" />
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset class="inline">
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer class="footer">Not copyright &copy; 2022 Natalie Mueller</footer>
+        
+        <script src="js/script.js" async defer></script>
+    </body>
+</html>
